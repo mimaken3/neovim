@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/mimaken/go/src/db-operation'
+let g:netrw_dirhist_2='/Users/mimaken'
+let g:netrw_dirhist_1='/Users/mimaken/development/go/src/github.com/golang/example/stringutil'
+let g:netrw_dirhist_0='/Users/mimaken/.cache/omf/https___github.com_oh-my-fish_packages-main_master/packages'
+let g:netrw_dirhist_9='/Users/mimaken/.cache/dein/repos/github.com/fatih/vim-go'
+let g:netrw_dirhist_8='/Users/mimaken/.cache/dein/repos/github.com/fatih/vim-go/.git'
+let g:netrw_dirhist_7='/Users/mimaken/.cache/dein/repos/github.com/fatih/vim-go/.git/hooks'
+let g:netrw_dirhist_6='/Users/mimaken/.cache/dein/repos/github.com/fatih/vim-go/.git'
+let g:netrw_dirhist_5='/Users/mimaken/.cache/dein/repos/github.com/fatih/vim-go'
+let g:netrw_dirhist_4='/Users/mimaken/.cache/dein/repos/github.com/Shougo/denite.nvim/test/rplugin/python3'
