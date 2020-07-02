@@ -2,6 +2,10 @@ syntax on
 
 colorscheme iceberg
 
+" band-aid solution
+" https://github.com/neovim/neovim/issues/11393
+" cnoremap 3636 <c-u>undo<CR>
+
 " カレント行ハイライトon
 set cursorline
 
@@ -100,10 +104,11 @@ set relativenumber
 " Escの2回押しでハイライト消去
 nnoremap <Esc><Esc> :nohlsearch<CR><ESC>
 " すべての数を10進数として扱う
-set nrformats=
+" set nrformats=
 " 行をまたいで移動
 "set whichwrap=b,s,h,l,<,>,[,],~
 " バッファスクロール
+" マウスで操作可能に
 set mouse=a
 " 日本語
 lang en_US.UTF-8
@@ -149,9 +154,13 @@ map <silent> <C-h> :bprev<CR>
 " ビルド(makeなど)したらファイルを自動保存
 set autowrite
 
+" vim起動時の変な文字列の表示をなくす？
+" https://github.com/neovim/neovim/issues/5990
+" let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
+
 " pythonの設定
-let g:python_host_prog  = '/usr/local/bin/python2'
-let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python_host_prog  = '/Users/mimaken/.pyenv/shims/python2'
+let g:python3_host_prog = '/Users/mimaken/.pyenv/shims/python3'
 
 " dein
 if &compatible
@@ -187,8 +196,8 @@ let g:python3_host_prog  = '/Users/mimaken/.pyenv/shims/python3'
 let g:python3_host_skip_check = 1
 
 " Run deoplete.nvim automatically
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
 " deoplete-go settings
-let g:deoplete#sources#go#gocode_binary = '/Users/mimaken/go/bin/gocode'
-let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
+" let g:deoplete#sources#go#gocode_binary = '/Users/mimaken/go/bin/gocode'
+" let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 
